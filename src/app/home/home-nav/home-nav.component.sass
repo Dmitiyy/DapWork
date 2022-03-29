@@ -1,0 +1,47 @@
+.home__nav
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  &-logo
+    padding: 30px
+  &-pages
+    list-style: none
+    li
+      display: flex
+      align-items: center
+      cursor: pointer
+      margin-top: 20px
+      &:nth-child(1)
+        margin-top: 0px
+      svg
+        margin-left: 37px
+      p
+        font-weight: 500
+        font-size: 24px
+        margin-left: 20px
+        letter-spacing: -0.09em
+  &-links
+    display: flex
+    padding-left: 37px
+    padding-bottom: 30px
+    list-style: none
+    li
+      margin-left: 30px
+      &:nth-child(1)
+        margin-left: 0px
+
+.home__nav-active
+  margin-top: 0px
+  color: #556BE0
+  &::before
+    content: ''
+    width: 7px
+    height: 67px
+    background: #556BE0
+    border-radius: 0px 15px 15px 0px
+  svg
+    margin-left: 30px !important
+    path
+      fill: #556BE0
+      stroke: #556BE0
