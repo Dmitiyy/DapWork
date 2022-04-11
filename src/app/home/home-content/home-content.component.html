@@ -12,7 +12,8 @@
       <img src="assets/images/main.png" alt="main">
     </div>
   </header>
-  <section class="home__content-jobs">
+  <h2 class="home__content-chapter">Jobs</h2>
+  <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(4, 220px)'}">
     <app-work-card></app-work-card>
     <app-work-card></app-work-card>
     <app-work-card></app-work-card>
@@ -21,5 +22,12 @@
     <app-work-card></app-work-card>
     <app-work-card></app-work-card>
     <app-work-card></app-work-card>
+  </section>
+  <h2 class="home__content-chapter">Teams <span>(you can join a team and work together)</span></h2>
+  <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(2, 480px)'}">
+    <app-team-card></app-team-card>
+    <app-team-card></app-team-card>
+    <app-team-card></app-team-card>
+    <app-team-card></app-team-card>
   </section>
 </div>
