@@ -1,33 +1,37 @@
-<div class="home__content">
-  <h2 class="home__content-title">
-    Start looking for a job right now
-  </h2>
-  <header class="home__content-header">
-    <div class="home__header-wrap">
-      <div>
-        <h1>Implement tasks - earn money</h1>
-        <p>Find a task, solve a problem, make money</p>
-        <button>Start now</button>
+<div class="home">
+  <div class="home__sim-left"></div>
+  <div class="home__content">
+    <h2 class="home__content-title">
+      Start looking for a job right now
+    </h2>
+    <header class="home__content-header">
+      <div class="home__header-wrap">
+        <div>
+          <h1>Implement tasks - earn money</h1>
+          <p>Find a task, solve a problem, make money</p>
+          <button>Start now</button>
+        </div>
+        <img src="assets/images/main.png" alt="main">
       </div>
-      <img src="assets/images/main.png" alt="main">
-    </div>
-  </header>
-  <h2 class="home__content-chapter">Jobs</h2>
-  <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(4, 220px)'}">
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-    <app-work-card></app-work-card>
-  </section>
-  <h2 class="home__content-chapter">Teams <span>(you can join a team and work together)</span></h2>
-  <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(2, 480px)'}">
-    <app-team-card></app-team-card>
-    <app-team-card></app-team-card>
-    <app-team-card></app-team-card>
-    <app-team-card></app-team-card>
-  </section>
+    </header>
+    <h2 class="home__content-chapter">Jobs</h2>
+    <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(4, 220px)'}">
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+      <app-work-card></app-work-card>
+    </section>
+    <h2 class="home__content-chapter">Teams <span>(you can join a team and work together)</span></h2>
+    <section class="home__content-jobs" [ngStyle]="{'grid-template-columns': 'repeat(2, 480px)'}">
+      <app-team-card></app-team-card>
+      <app-team-card></app-team-card>
+      <app-team-card></app-team-card>
+      <app-team-card></app-team-card>
+    </section>
+  </div>
+  <div class="home__sim-right"></div>
 </div>
